@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
+  },
+  "name": "project-nimble",
+  "description": "Project-Nimble",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin Wang"
+}
