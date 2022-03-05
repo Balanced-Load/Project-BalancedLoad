@@ -9,6 +9,9 @@ const PORT = 3000;
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 
-app.get('/test', controller.getStyles);
+app.get('/products', controller.getFiveProducts);
+app.get('/products/:id', controller.getProdDetails);
+app.get('/products/:id/styles', controller.getStyles);
+app.get('/products/:id/related', controller.getRelated);
 
 app.listen(PORT, () => { console.log(`Listening to port ${PORT}`); });

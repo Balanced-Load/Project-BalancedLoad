@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS products;
-CREATE DATABASE products;
-\c products;
+-- DROP DATABASE IF EXISTS products;
+-- CREATE DATABASE products;
+-- \c products;
 DROP TABLE IF EXISTS product;
 
 CREATE TABLE product (
@@ -24,12 +24,12 @@ CREATE TABLE features (
 DROP TABLE IF EXISTS styles;
 
 CREATE TABLE styles (
-  id INTEGER NOT NULL PRIMARY KEY,
+  style_id INTEGER NOT NULL PRIMARY KEY,
   productId INTEGER NULL DEFAULT NULL,
   name VARCHAR(100) NULL DEFAULT NULL,
   sale_price INTEGER,
   original_price INTEGER,
-  "default?" BOOLEAN NULL DEFAULT NULL
+  "default" BOOLEAN NULL DEFAULT NULL
 );
 
 DROP TABLE IF EXISTS photos;
