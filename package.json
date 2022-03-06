@@ -6,10 +6,14 @@
   "name": "project-nimble",
   "description": "Project-Nimble",
   "version": "1.0.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+    "supertest": "^6.2.2"
+  },
   "scripts": {
-    "start": "npx nodemon server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/index.js",
+    "test": "mocha server/test.js"
   },
   "author": "Austin Wang"
 }

@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
-const db = require('../db.js')
-const controller = require('../controller/controller.js')
+const db = require('./db/db.js')
+const controller = require('./controller/controller.js')
 
 const app = express();
 const PORT = 3000;
@@ -14,4 +14,4 @@ app.get('/products/:id', controller.getProdDetails);
 app.get('/products/:id/styles', controller.getStyles);
 app.get('/products/:id/related', controller.getRelated);
 
-app.listen(PORT, () => { console.log(`Listening to port ${PORT}`); });
+module.exports = app.listen(PORT, () => { console.log(`Listening to port ${PORT}`); });
