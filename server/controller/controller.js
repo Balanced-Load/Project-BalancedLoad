@@ -4,7 +4,7 @@ module.exports = {
   getFiveProducts: (req, res) => {
     model.retrieveFiveProducts((err, result) => {
       if (err) {
-        res.sendStatus(500);
+        res.status(500).send(err);
       } else {
         res.send(result.rows);
       }
@@ -24,7 +24,7 @@ module.exports = {
   getStyles: (req, res) => {
     model.retrieveStyles(req.params.id, (err, result) => {
       if (err) {
-        res.sendStatus(500);
+        res.status(500).send(err);
       } else {
         res.send(result);
       }
@@ -34,7 +34,7 @@ module.exports = {
   getRelated: (req, res) => {
     model.retrieveRelated(req.params.id, (err, result) => {
       if (err) {
-        res.sendStatus(500);
+        res.status(500).send(err);
       } else {
         res.send(result);
       }
