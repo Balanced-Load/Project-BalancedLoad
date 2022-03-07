@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 let request = require('supertest');
-const app = require('.');
+const app = require('../server');
 
 const getProducts = async () => {
   return await request(app)

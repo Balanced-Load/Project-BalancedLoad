@@ -1,8 +1,4 @@
-const { Pool } = require('pg')
-
-const pool = new Pool({
-  database: 'products',
-})
+const pool = require('../../db/db.js')
 
 module.exports = {
   retrieveFiveProducts: (callback) => {
