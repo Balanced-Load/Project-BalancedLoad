@@ -3,3 +3,4 @@ csv
 scratchPaper.js
 .DS_Store
 scp.sh
+newrelic_agent.log

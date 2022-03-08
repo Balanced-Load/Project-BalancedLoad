@@ -2,6 +2,7 @@
   "author": "Austin Wang",
   "dependencies": {
     "express": "^4.17.3",
+    "newrelic": "^8.8.0",
     "pg": "^8.7.3"
   },
   "name": "project-nimble",
@@ -14,8 +15,8 @@
   },
   "scripts": {
     "init": "bash init.sh",
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "start": "node server",
+    "dev": "nodemon server",
     "test": "mocha tests/mochaTests.js",
     "stress": "k6 run tests/stressTests.js"
   }
