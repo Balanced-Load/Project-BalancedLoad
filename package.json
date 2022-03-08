@@ -1,4 +1,5 @@
 {
+  "author": "Austin Wang",
   "dependencies": {
     "express": "^4.17.3",
     "pg": "^8.7.3"
@@ -17,6 +18,5 @@
     "dev": "node server/index.js",
     "test": "mocha tests/mochaTests.js",
     "stress": "k6 run tests/stressTests.js"
-  },
-  "author": "Austin Wang"
+  }
 }
