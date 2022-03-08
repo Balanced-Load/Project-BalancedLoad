@@ -13,7 +13,8 @@
   },
   "scripts": {
     "init": "bash init.sh",
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
     "test": "mocha tests/mochaTests.js",
     "stress": "k6 run tests/stressTests.js"
   },
