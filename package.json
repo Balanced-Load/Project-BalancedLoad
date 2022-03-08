@@ -18,6 +18,7 @@
     "start": "node server",
     "dev": "nodemon server",
     "test": "mocha tests/mochaTests.js",
-    "stress": "k6 run tests/stressTests.js"
+    "stress": "k6 run tests/stressTests.js",
+    "stop": "fuser -k 3000/tcp"
   }
 }
