@@ -12,7 +12,8 @@
     "supertest": "^6.2.2"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "nm": "nodemon server/index.js",
     "test": "mocha tests/mochaTests.js",
     "stress": "k6 run tests/stressTests.js"
   },
