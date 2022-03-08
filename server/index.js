@@ -15,9 +15,10 @@ app.get('/products/:id', controller.getProdDetails);
 app.get('/products/:id/styles', controller.getStyles);
 app.get('/products/:id/related', controller.getRelated);
 
-app.get('/:file', (req, res) => {
-  const file = path.join(__dirname, '..', req.params.file);
-  res.sendFile(file);
-})
+// For verifying account on loaderio:
+// app.get('/:file', (req, res) => {
+//   const file = path.join(__dirname, '..', req.params.file);
+//   res.sendFile(file);
+// })
 
 module.exports = app.listen(PORT, () => { console.log(`Listening to port ${PORT}`); });
