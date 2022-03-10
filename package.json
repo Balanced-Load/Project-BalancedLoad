@@ -14,8 +14,7 @@
     "supertest": "^6.2.2"
   },
   "scripts": {
-    "init": "bash init.sh",
-    "start": "node server",
+    "start": "bash init.sh",
     "dev": "nodemon server",
     "test": "mocha tests/mochaTests.js",
     "stress": "k6 run tests/stressTests.js",

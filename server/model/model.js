@@ -2,7 +2,7 @@ const pool = require('../../db/db.js')
 
 module.exports = {
   retrieveFiveProducts: (callback) => {
-    pool.query('select * from product limit 5', callback);
+    pool.query('select * from product FETCH FIRST 5 ROWS ONLY', callback);
   },
 
   retrieveProdDetails: (id, callback) => {
